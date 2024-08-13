@@ -15,7 +15,7 @@
 
 ここでは背景情報とともに記事として公開します。
 
-![](assets/eye-catch.png)
+![](https://raw.githubusercontent.com/yKesamaru/file_metadata/master/assets/eye-catch.png)
 
 - [`Ubuntu 22.04`におけるファイルマネージャーの`拡張属性`によるファイルの再帰的検索(GUI)](#ubuntu-2204におけるファイルマネージャーの拡張属性によるファイルの再帰的検索gui)
   - [はじめに](#はじめに)
@@ -30,9 +30,9 @@
 
 ## `nautilus`での表示のされ方
 アイコン表示
-![](assets/2024-08-13-13-43-48.png)
+![](https://raw.githubusercontent.com/yKesamaru/file_metadata/master/assets/2024-08-13-13-43-48.png)
 一覧表示
-![](assets/2024-08-13-13-44-27.png)
+![](https://raw.githubusercontent.com/yKesamaru/file_metadata/master/assets/2024-08-13-13-44-27.png)
 
 `gio`コマンドや`xattr`コマンド、あるいは`attr`ユーティリティで得られるコマンド（`getfattr`コマンドなど）ではスターについてのメタデータにアクセスできません。`gvfs-info`コマンドでアクセスできるとの記述がありませんたが、`Ubuntu 22.04`のリポジトリには存在しませんでした。`gvfs-metadata`コマンドも存在しません。(universe, multiverse含む)
 `nautilus`におけるスターのデータは`GVFS`によって`metadata::emblems`名前空間に保存しているようです。
@@ -53,7 +53,7 @@
 ```bash
 user@user:~/ドキュメント/file_metadata/assets$ tracker3 info star.png | xsel
 Querying information for entity: 'star.png'
-  'file:///home/user/%E3%83%89%E3%82%AD%E3%83%A5%E3%83%A1%E3%83%B3%E3%83%88/file_metadata/assets/star.png'
+  'file:///home/user/%E3%83%89%E3%82%AD%E3%83%A5%E3%83%A1%E3%83%B3%E3%83%88/file_metadata/https://raw.githubusercontent.com/yKesamaru/file_metadata/master/assets/star.png'
 Results:
   'tracker:extractorHash' = 'b87eb36f02de830b63f91cc53c1a6db2b1b167622a4380961eb6775f90126cd6'
   'nfo:fileLastModified' = '2024-08-13T04:09:42Z'
@@ -69,7 +69,7 @@ Results:
   'nie:interpretedAs' = 'urn:fileid:03d690db-6073-4ac2-a67d-d90c69aab9a7:6459418'
   'nie:dataSource' = 'urn:fileid:03d690db-6073-4ac2-a67d-d90c69aab9a7:5767264'
   'nie:byteSize' = '300323'
-  'nie:url' = 'file:///home/user/%E3%83%89%E3%82%AD%E3%83%A5%E3%83%A1%E3%83%B3%E3%83%88/file_metadata/assets/star.png'
+  'nie:url' = 'file:///home/user/%E3%83%89%E3%82%AD%E3%83%A5%E3%83%A1%E3%83%B3%E3%83%88/file_metadata/https://raw.githubusercontent.com/yKesamaru/file_metadata/master/assets/star.png'
   'http://purl.org/dc/elements/1.1/source' = 'urn:fileid:03d690db-6073-4ac2-a67d-d90c69aab9a7:5767264'
   'http://purl.org/dc/elements/1.1/date' = '2024-08-13T04:09:42Z'
   'nrl:modified' = '54'
@@ -81,7 +81,7 @@ Results:
   'nmm:dlnaProfile' = 'PNG_LRG'
   'nfo:width' = '533'
   'nfo:height' = '493'
-  'nie:isStoredAs' = 'file:///home/user/%E3%83%89%E3%82%AD%E3%83%A5%E3%83%A1%E3%83%B3%E3%83%88/file_metadata/assets/star.png'
+  'nie:isStoredAs' = 'file:///home/user/%E3%83%89%E3%82%AD%E3%83%A5%E3%83%A1%E3%83%B3%E3%83%88/file_metadata/https://raw.githubusercontent.com/yKesamaru/file_metadata/master/assets/star.png'
   'nie:mimeType' = 'image/png'
   'nrl:modified' = '54'
   'nrl:added' = '2024-08-13T04:09:43Z'
@@ -99,7 +99,7 @@ Results:
 
 ## `Thunar`でのシンボルの表示のされ方
 
-![](assets/2024-08-13-13-12-20.png)
+![](https://raw.githubusercontent.com/yKesamaru/file_metadata/master/assets/2024-08-13-13-12-20.png)
 
 
 `nautilus`でのスターに関する属性情報のアクセスのしにくさと対象的に、`Thunar`におけるシンボルの属性情報については`gio info`コマンドで簡単に確認することができます。
@@ -112,8 +112,8 @@ user@user:~/ドキュメント/file_metadata/assets$ gio info star.png | xsel
 名前: star.png
 種類: regular
 サイズ:  300323
-URI: file:///home/user/%E3%83%89%E3%82%AD%E3%83%A5%E3%83%A1%E3%83%B3%E3%83%88/file_metadata/assets/star.png
-ローカルパス: /home/user/ドキュメント/file_metadata/assets/star.png
+URI: file:///home/user/%E3%83%89%E3%82%AD%E3%83%A5%E3%83%A1%E3%83%B3%E3%83%88/file_metadata/https://raw.githubusercontent.com/yKesamaru/file_metadata/master/assets/star.png
+ローカルパス: /home/user/ドキュメント/file_metadata/https://raw.githubusercontent.com/yKesamaru/file_metadata/master/assets/star.png
 unix mount: /dev/nvme0n1p2 / ext4 rw,relatime,errors=remount-ro
 属性:
   standard::type: 1
@@ -181,7 +181,7 @@ done
 ```bash
 # 使い方
 user@user:~/ドキュメント/file_metadata$ ./metadata.sh ./
-./assets/star.png
+./https://raw.githubusercontent.com/yKesamaru/file_metadata/master/assets/star.png
 user@user:~/ドキュメント/file_metadata$
 ```
 
@@ -208,11 +208,11 @@ thunar "$TEMP_DIR"
 ```
 このようなスクリプトを作成し、これをカスタムアクションに登録します。
 - カスタムアクションに登録
-![](assets/2024-08-13-16-21-15.png)
+![](https://raw.githubusercontent.com/yKesamaru/file_metadata/master/assets/2024-08-13-16-21-15.png)
 - カスタムアクションの出現条件を設定
-![](assets/2024-08-13-16-21-51.png)
+![](https://raw.githubusercontent.com/yKesamaru/file_metadata/master/assets/2024-08-13-16-21-51.png)
 - 実行結果
-![](assets/2024-08-13-16-23-07.png)
+![](https://raw.githubusercontent.com/yKesamaru/file_metadata/master/assets/2024-08-13-16-23-07.png)
 
 成功です。
 
