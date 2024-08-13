@@ -25,6 +25,7 @@
     - [検索用スクリプト](#検索用スクリプト)
     - [`Thunar`のカスタムアクションとして登録する](#thunarのカスタムアクションとして登録する)
   - [おわりに](#おわりに)
+  - [参考文献](#参考文献)
 
 
 
@@ -222,9 +223,11 @@ thunar "$TEMP_DIR"
 
 ありがとうございました。
 
-
-
-
-
-
+## 参考文献
+- [GNOME: Where does Nautilus store emblem data and how?](https://stackoverflow.com/questions/10874702/gnome-where-does-nautilus-store-emblem-data-and-how)
+- [GVFSD-METADATA(1)](https://man.archlinux.org/man/gvfsd-metadata.1.en)
+- [拡張属性](https://wiki.archlinux.jp/index.php/%E6%8B%A1%E5%BC%B5%E5%B1%9E%E6%80%A7)
+- [xattr(7)](https://man.archlinux.org/man/xattr.7)
+- [Nautilus FAQ Slow Nautilus](https://wiki.debian.org/Nautilus/FAQ/SlowNautilus)
+- [TRACKER3-SPARQL(1)](https://man.archlinux.org/man/tracker3-sparql.1.en)
 
