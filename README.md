@@ -101,7 +101,7 @@ user@user:~/ドキュメント/file_metadata/assets$ tracker3 info star.png | xs
 Querying information for entity: 'star.png'
   'file:///home/user/%E3%83%89%E3%82%AD%E3%83%A5%E3%83%A1%E3%83%B3%E3%83%88/file_metadata/assets/star.png'
 Results:
-  'tracker:extractorHash' = 'b87eb36f02de830b63f91cc53c1a6db2b1b167622a4380961eb6775f90126cd6'
+  'tracker:extractorHash' = '***********************'
   'nfo:fileLastModified' = '2024-08-13T04:09:42Z'
   'nfo:fileName' = 'star.png'
   'nfo:fileSize' = '300323'
@@ -157,7 +157,7 @@ user@user:~/ドキュメント/file_metadata/assets$ gio info star.png | xsel
 サイズ:  300323
 URI: file:///home/user/%E3%83%89%E3%82%AD%E3%83%A5%E3%83%A1%E3%83%B3%E3%83%88/file_metadata/assets/star.png
 ローカルパス: /home/user/ドキュメント/file_metadata/assets/star.png
-unix mount: /dev/nvme0n1p2 / ext4 rw,relatime,errors=remount-ro
+unix mount: /dev/********** / ext4 rw,relatime,errors=remount-ro
 属性:
   standard::type: 1
   standard::name: star.png
